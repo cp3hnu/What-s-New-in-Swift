@@ -144,7 +144,7 @@ print(localization3) // I have 10 apples
 
 ### Swift 5.1
 
-自己增加
+增加下面3个新特性 in "Whats-New-In-Swift-5-1.playground"
 
 -   Dynamic Member Lookup
 -   Property Wrappers 
