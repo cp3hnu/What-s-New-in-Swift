@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios' display-mode='rendered'>
+<playground version='6.0' target-platform='ios' display-mode='raw'>
     <pages>
         <page name='Introduction'/>
         <page name='Improvements to synthesized memberwise initializers'/>
@@ -11,5 +11,8 @@
         <page name='Matching optional enums against non-optionals'/>
         <page name='Ordered collection diffing'/>
         <page name='Creating uninitialized arrays'/>
+        <page name='Dynamic Member Lookup'/>
+        <page name='Property Wrappers '/>
+        <page name='SIMD'/>
     </pages>
 </playground>

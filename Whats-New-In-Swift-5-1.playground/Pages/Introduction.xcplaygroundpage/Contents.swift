@@ -23,6 +23,9 @@
  * [Matching optional enums against non-optionals](Matching%20optional%20enums%20against%20non-optionals)
  * [Ordered collection diffing](Ordered%20collection%20diffing)
  * [Creating uninitialized arrays](Creating%20uninitialized%20arrays)
+ * [Dynamic Member Lookup](Dynamic%20Member%20Lookup)
+ * [Property Wrappers](Property%20Wrappers)
+ * [SIMD](SIMD)
 
  &nbsp;
  
