@@ -147,5 +147,46 @@ print(localization3) // I have 10 apples
 增加下面3个新特性 in "Whats-New-In-Swift-5-1.playground"
 
 -   Dynamic Member Lookup
--   Property Wrappers 
+-   Property Wrappers
 -   SIMD
+
+#### Property Wrappers实战 - UserDefaults
+
+```swift
+fileprivate typealias Key = UserDefaultsService.Key
+
+@propertyWrapper
+struct UserDefaultWrapper<T> {
+    private let key: Key
+    private let defaultValue: T?
+    var wrappedValue: T? {
+        get {
+            UserDefaults.standard.object(forKey: key.rawValue) as? T ?? defaultValue
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: key.rawValue)
+            UserDefaults.standard.synchronize()
+        }
+    }
+    
+    // 注意 wrappedValue 参数必须在前，其它参数在后
+    fileprivate init(wrappedValue: T?, _ key: Key) {
+        self.key = key
+        self.defaultValue = wrappedValue
+    }
+}
+
+struct UserDefaultsService {
+    enum Key: String {
+        case refreshDate = "refresh_date"
+        case fontSize = "font_size"
+    }
+    
+    @UserDefaultWrapper(Key.refreshDate)
+    static var refreshDate: Date? = nil
+    
+    @UserDefaultWrapper(Key.fontSize)
+    static var fontSize: Int! = 15
+}
+```
+
