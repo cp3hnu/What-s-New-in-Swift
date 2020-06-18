@@ -21,6 +21,8 @@ struct TwelveOrLess {
         get { return number }
         set { number = min(newValue, 12) }
     }
+    init() {
+    }
 }
 
 struct SmallRectangle {
@@ -161,6 +163,9 @@ struct SmallNumber2 {
                 projectedValue = false
             }
         }
+    }
+    init() {
+        
     }
 }
 struct SomeStructure {
