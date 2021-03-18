@@ -8,6 +8,7 @@ From Swift 4.0 to Swift 5.1
 -   [Swift 5.1](https://github.com/twostraws/whats-new-in-swift-5-1)
 -   [Swift 5.2](https://github.com/twostraws/whats-new-in-swift-5-2)
 -   [Swift 5.3](https://github.com/twostraws/whats-new-in-swift-5-3)
+-   [Swift 5.4](https://github.com/twostraws/whats-new-in-swift-5-4)
 
 
 ### Website
